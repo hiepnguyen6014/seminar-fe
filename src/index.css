@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		font-family: 'Nunito', sans-serif;
+	}
+}
+
+@layer components {
+	.title {
+		@apply text-3xl font-bold text-center mt-5;
+	}
+
+	.more-container {
+		@apply text-center my-5;
+	}
+
+	.more {
+		@apply p-2 text-sm text-gray-900 bg-slate-200 rounded-l-lg focus:outline-none;
+	}
+
+	.more-btn {
+		@apply bg-indigo-500 text-sm text-white p-2 rounded-r-lg;
+	}
+
+	.notes-container {
+		@apply flex flex-col items-center justify-center;
+	}
+
+	.note {
+		@apply flex p-2 text-gray-900 bg-slate-100 w-96 rounded-md mb-2 last:mb-0;
+	}
+
+	.delete-btn {
+		@apply ml-4 px-4 rounded-full;
+	}
+
+	.createdAt {
+		@apply text-sm text-gray-600;
+	}
+
+	.content {
+		@apply text-lg w-full text-gray-900;
+	}
+}
